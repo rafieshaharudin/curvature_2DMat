@@ -5,6 +5,8 @@ Created on Wed Sep 27 16:14:00 2023
 
 @author: rafieshaharudin
 
+Title: curvature_2DMat_v2.1
+
 Aim: To create ripple on 2D materials
      using the normal distribution curve.
 """
@@ -162,7 +164,7 @@ for i,j in zip(df_sorted["Z"],shift_factor):
                 print(" ")
                 break
 
-# udpate shifted Z coordinates in the DataFrame
+# update shifted Z coordinates in the DataFrame
 df_sorted["Z"] = shifted_Z
 
 # calculate curvature (h/L)
