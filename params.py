@@ -7,7 +7,7 @@ Created on Wed Sep 27 16:14:00 2023
 
 Title: curvature_2DMat_v2.1
 
-Aim: To create ripple on graphene flake (2D)
+Aim: To create ripple on 2D materials
      using the normal distribution curve.
 
 Note: This code can handle 2 type of atoms max
