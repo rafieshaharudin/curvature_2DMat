@@ -4,7 +4,7 @@ author: rafieshaharudin
 generate curvature on 2D materials for AIMD (VASP)
 
 Version 2.1:
-  ~ This code read/write coordinates (x,y,z) of a unit cell from/for POSCAR.
+  ~ This code read/write coordinates (x,y,z) of a unit cell from/for POSCAR./
   ~ Works on both Direct or Cartesian coordinates.
   ~ params.py is the input control.
   ~ amp and sigma in params.py are abitrary value to control the curvature.
