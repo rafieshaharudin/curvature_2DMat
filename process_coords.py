@@ -9,6 +9,8 @@ Title: curvature_2DMat_v2.1
 
 Aim: To create ripple on 2D materials
      using the normal distribution curve.
+     Note: This code can handle 2 type of atoms max
+      with an equal number of at1 and at2
 """
 
 import numpy as np
