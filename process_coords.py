@@ -171,8 +171,8 @@ for i,j in zip(df_sorted["Z"],shift_factor):
 df_sorted["Z"] = shifted_Z
 
 # calculate curvature (h/L)
-L = max(df_sorted["X"]) - min(df_sorted["X"])
-h = max(df_sorted["Z"]) - min(df_sorted["Z"])
+L = max(df_sorted["X"][:params.n_at1]) - min(df_sorted["X"][:params.n_at1])
+h = max(df_sorted["Z"][:params.n_at1]) - min(df_sorted["Z"][:params.n_at1])
 D = 100 * (h/L)
 
 # 3rd part : write output file
