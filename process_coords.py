@@ -7,7 +7,6 @@ Created on Wed Sep 27 16:14:00 2023
 
 Aim: To create ripple on graphene flake (2D)
      using the normal distribution curve.
-
 """
 
 import numpy as np
