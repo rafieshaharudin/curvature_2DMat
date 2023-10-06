@@ -14,6 +14,7 @@ Version 2.2:
   - The number of atoms for each type (n_at1 and n_at2) within the unitcell need to be the same.
   - The curvature is 1 dimensional along the X-axis.
   - Included correction to shift the lowest point in z to original flat position.
+  - Updated D calculation for n_typ == 1 and n_typ == 2.
 
 In the coming version:
   - Upgrade on the curvature making it 2 dimensionals along X- and Y-axis.
