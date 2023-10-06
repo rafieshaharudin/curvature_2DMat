@@ -5,7 +5,7 @@ Created on Wed Sep 27 16:14:00 2023
 
 @author: rafieshaharudin
 
-Title: curvature_2DMat_v2.w
+Title: curvature_2DMat_v2.2
        - Add correction to z after ripple creation
        
 Aim: To create ripple on 2D materials
