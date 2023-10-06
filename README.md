@@ -15,6 +15,7 @@ Version 2.1:
   - The curvature is 1 dimensional along the X-axis.
 
 In the coming version:
+  - Include correction to shift the lowest point in z to original flat position.
   - Upgrade on the curvature making it 2 dimensionals along X- and Y-axis.
   - Increase the robustness of the code so: n_typ > 2 and n_at1 != n_at2.
 
