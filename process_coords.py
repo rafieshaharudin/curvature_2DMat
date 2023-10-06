@@ -5,8 +5,9 @@ Created on Wed Sep 27 16:14:00 2023
 
 @author: rafieshaharudin
 
-Title: curvature_2DMat_v2.1
-
+Title: curvature_2DMat_v2.w
+       - Add correction to z after ripple creation
+       
 Aim: To create ripple on 2D materials
      using the normal distribution curve.
 
@@ -146,6 +147,8 @@ for i in idx:
         norm = (1 / (sigma * np.sqrt(2 * np.pi))) * np.exp(-((i - mu)**2) / (2 * sigma**2))
         shift_factor.append(norm*params.amp)
 
+cor_factor = min(shift_factor)
+
 if params.n_typ == 2:
         shift_factor = shift_factor + shift_factor
 else:
@@ -154,7 +157,8 @@ else:
 # manipulate Z to create 1D curve
 for i,j in zip(df_sorted["Z"],shift_factor):
         if len(df_sorted) == len(shift_factor):
-                newZ = i+j
+# correction applied here v2.2
+             newZ = i+j-cor_factor
                 shifted_Z.append(newZ)
 
 # this might be unnecessary now
