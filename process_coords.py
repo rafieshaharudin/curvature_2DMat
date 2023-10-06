@@ -175,9 +175,15 @@ for i,j in zip(df_sorted["Z"],shift_factor):
 df_sorted["Z"] = shifted_Z
 
 # calculate curvature (h/L)
-L = max(df_sorted["X"][:params.n_at1]) - min(df_sorted["X"][:params.n_at1])
-h = max(df_sorted["Z"][:params.n_at1]) - min(df_sorted["Z"][:params.n_at1])
-D = 100 * (h/L)
+if params.n_typ == 1:
+       L = max(df_sorted["X"]) - min(df_sorted["X"])
+       h = max(df_sorted["Z"]) - min(df_sorted["Z"])
+       D = 100 * (h/L)
+
+elif params.n_typ == 2:
+       L = max(df_sorted["X"][params.n_at1:total_at]) - min(df_sorted["X"][params.n_at1:total_at])
+       h = max(df_sorted["Z"][params.n_at1:total_at]) - min(df_sorted["Z"][params.n_at1:total_at])
+       D = 100 * (h/L)
 
 # 3rd part : write output file
 fw = open(out_file, "w")
