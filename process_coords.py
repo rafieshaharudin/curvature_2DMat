@@ -158,8 +158,8 @@ else:
 for i,j in zip(df_sorted["Z"],shift_factor):
         if len(df_sorted) == len(shift_factor):
 # correction applied here v2.2
-             newZ = i+j-cor_factor
-                shifted_Z.append(newZ)
+              newZ = i+j-cor_factor
+              shifted_Z.append(newZ)
 
 # this might be unnecessary now
         else:
