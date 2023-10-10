@@ -19,7 +19,7 @@ in_file = "coord_hBN"           # input file name
 n_typ   = 2                     # number of atom type
 n_at1   = 25                    # number of type1 atom
 n_at2   = 25                    # number of type2 atom
-
+curve   = "convex"              # convex or concave (str)
 # normal distribution
 amp     = 15                    # control height, amp>=1, 1 = no amplification
 sigma   = 8                     # subtle control on width
