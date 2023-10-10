@@ -5,7 +5,7 @@ Created on Wed Sep 27 16:14:00 2023
 
 @author: rafieshaharudin
 
-Title: curvature_2DMat_v2.2
+Title: curvature_2DMat_v2.3
 
 Aim: To create ripple on 2D materials
      using the normal distribution curve.
