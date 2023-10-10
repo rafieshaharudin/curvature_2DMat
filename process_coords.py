@@ -171,7 +171,7 @@ for i,j in zip(df_sorted["Z"],shift_factor):
                 print(" ")
                 print("ERROR: N shift factor != N z_points!")
                 print("check you have the correct number of atoms.")
-                print("check spelling "convex" / "concave" is correct!")
+                print("check spelling convex / concave is correct!")
                 print(" ")
                 print(" ")
                 break
