@@ -5,8 +5,9 @@ Created on Wed Sep 27 16:14:00 2023
 
 @author: rafieshaharudin
 
-Title: curvature_2DMat_v2.2
+Title: curvature_2DMat_v2.3
        - Add correction to z after ripple creation
+       - Add options to choose convex/concave curve
        
 Aim: To create ripple on 2D materials
      using the normal distribution curve.
@@ -161,7 +162,7 @@ for i,j in zip(df_sorted["Z"],shift_factor):
               newZ = i+j-cor_factor
               shifted_Z.append(newZ)
 # input convex concave v2.3
-        elif len(df_sorted) == len(shift_factor) adn params.curve == "concave":
+        elif len(df_sorted) == len(shift_factor) and params.curve == "concave":
               newZ = i-j+cor_factor
               shifted_Z.append(newZ)
 # this might be unnecessary now
@@ -170,6 +171,7 @@ for i,j in zip(df_sorted["Z"],shift_factor):
                 print(" ")
                 print("ERROR: N shift factor != N z_points!")
                 print("check you have the correct number of atoms.")
+                print("check spelling "convex" / "concave" is correct!")
                 print(" ")
                 print(" ")
                 break
