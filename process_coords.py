@@ -24,6 +24,7 @@ import params   # need to be in the same directory
 # in_file = input("input file:")
 print()
 out_file = input("output file:")
+print()
 
 # 1st part (i) : read XYZ coordinates, arrange by X before pass to DataFrame
 # 1 type of atom
