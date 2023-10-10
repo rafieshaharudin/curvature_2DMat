@@ -15,7 +15,7 @@ Note: This code can handle 2 type of atoms max
 """
 
 # input parameters
-in_file = "coord_hBN"           # input file name
+in_file = "coord_hBN"           # input file name (str)
 n_typ   = 2                     # number of atom type
 n_at1   = 25                    # number of type1 atom
 n_at2   = 25                    # number of type2 atom
