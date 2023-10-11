@@ -198,7 +198,7 @@ for x,y,z in zip(df_sorted["X"], df_sorted["Y"], df_sorted["Z"]):
         fw.write(str("%20.16f" % x) + str("%20.16f" % y) + str("%20.16f\n" % z))
 
 fout = open("out.dat", "w")
-fout.write(str("%20s" % "curvature %") + str("%10.2s" % D) +str("%2s\n" % "%"))
+fout.write(str("%20s" % "curvature %") + str("%10.2f" % D) +str("%2s\n" % "%"))
 
 fw.close()
 fout.close()
